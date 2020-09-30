@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Uppgift 1
+
+      let word = "Hello";
+      const numbEr = 23;
+      var ugly = false;
+
+      // Uppgift 2
+
+      let goodDay = false;
+      let num = 9;
+      let text = "text";
+      let dog = { namn: "rudolf", age: 12, stupid: true };
+      let names = ["Andy", "David", "John", "Martin"];
+
+      // Uppgift 3
+
+      function summera(tal1, tal2) {
+        let summa = tal1 + tal2;
+        return summa;
+      }
+      let sum = summera(3, 3);
+      console.log("Summan blir: " + sum);
+
+      // Uppgift 4
+
+      let currentTime = new Date();
+      console.log(currentTime);
+
+      // Uppgift 5
+
+      let cat = {
+        name: "Max",
+        age: 5,
+        gender: "male",
+        logout() {
+          console.log(cat);
+        },
+      };
+      cat.logout();
+
+      // Uppgift 6
+
+      let myArray = [4, 8, 15, 16, 23, 42];
+      console.log(myArray);
+      console.log(myArray[5]);
+
+      let fArray = myArray.filter(filterArray);
+
+      function filterArray(x) {
+        return x < 20;
+      }
+
+      console.log(fArray);
+
+      let mArray = fArray.map(mapArray);
+
+      function mapArray(x) {
+        return x * 2;
+      }
+      console.log(mArray);
+
+      mArray.forEach(arrange);
+
+      function arrange(number) {
+        console.log(number);
+      }
+
+      // Uppgift 7
+
+      let tal = 0;
+      while (tal < 6) {
+        if (tal < 3) {
+          console.log("Loop " + (tal + 1));
+        } else {
+          console.log("Almost there...");
+        }
+        tal++;
+      }
+      console.log("Done!");
+    </script>
+  </body>
+</html>
